@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A quick introduction to OpenAI Codex, the coding agent for software development.">
+  <title>Codex — Your coding agent</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Codex home"><span class="brand-mark">✳</span> codex<span class="brand-period">.</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#capabilities">Capabilities</a><a href="#workflow">Workflow</a>
+      <a class="nav-cta" href="https://developers.openai.com/learn/codex" target="_blank" rel="noreferrer">Explore Codex <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse"></span> A coding agent by OpenAI</p>
+        <h1>Build with<br><span>Codex.</span></h1>
+        <p class="hero-lede">A coding agent that helps you write, review, and debug software. Bring it into the tools and workflows where you build.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#about">Meet Codex <span>↓</span></a><a class="text-link" href="https://developers.openai.com/api/docs/guides/code-generation" target="_blank" rel="noreferrer">Read the docs <span>↗</span></a></div>
+        <div class="hero-note"><span class="note-line"></span><span>Less busywork. More building.</span></div>
+      </div>
+      <div class="terminal-card" aria-label="Illustration of a Codex coding task">
+        <div class="terminal-top"><div class="traffic"><i></i><i></i><i></i></div><span>codex / task-014</span><span class="terminal-status"><b></b> COMPLETE</span></div>
+        <div class="terminal-body">
+          <div class="prompt-line"><span class="line-no">01</span><span class="prompt-symbol">›</span><span>Improve the empty state on the</span></div>
+          <div class="prompt-line"><span class="line-no">02</span><span class="prompt-symbol"> </span><span>projects page. Keep it accessible.</span></div>
+          <div class="terminal-divider"></div>
+          <div class="activity"><span class="activity-icon icon-search">⌕</span><span>Inspecting project files</span><span class="activity-check">✓</span></div>
+          <div class="activity"><span class="activity-icon icon-edit">⌘</span><span>Updating <code>ProjectsView.tsx</code></span><span class="activity-check">✓</span></div>
+          <div class="activity"><span class="activity-icon icon-test">◉</span><span>Reviewing the changes</span><span class="activity-check">✓</span></div>
+          <div class="terminal-divider"></div>
+          <div class="result"><span class="result-dot"></span><div><strong>Ready for your review</strong><small>3 files changed <span>·</span> Clear, focused diff</small></div><span class="result-arrow">↗</span></div>
+        </div>
+        <span class="card-star star-one">✳</span><span class="card-star star-two">✳</span>
+      </div>
+      <span class="hero-index">01 / OVERVIEW</span>
+    </section>
+
+    <section class="intro-section" id="about">
+      <div class="wrap intro-grid">
+        <p class="eyebrow section-label">01 — What is Codex?</p>
+        <div><h2>Your teammate<br>for the <em>work</em> of code.</h2><p class="section-copy">Codex is OpenAI’s coding agent for software development. Ask it to take on a coding task, and it can help make progress from understanding the code to preparing changes for you to review.</p><a class="inline-link" href="https://developers.openai.com/api/docs/guides/code-generation" target="_blank" rel="noreferrer">Learn about Codex <span>↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="capabilities wrap" id="capabilities">
+      <div class="section-heading"><div><p class="eyebrow section-label">02 — What it can help with</p><h2>From first draft<br>to final review.</h2></div><p>Describe the outcome you want. Codex can help across the everyday work of building software.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card"><span class="feature-number">01</span><div class="feature-icon icon-write">{ }</div><h3>Write code</h3><p>Turn a clear task into a focused implementation that fits your project.</p><span class="feature-arrow">↗</span></article>
+        <article class="feature-card"><span class="feature-number">02</span><div class="feature-icon icon-review">⌕</div><h3>Review code</h3><p>Get another set of eyes on a change and surface areas worth a closer look.</p><span class="feature-arrow">↗</span></article>
+        <article class="feature-card"><span class="feature-number">03</span><div class="feature-icon icon-debug">⌁</div><h3>Debug issues</h3><p>Investigate unexpected behavior and work toward a practical fix.</p><span class="feature-arrow">↗</span></article>
+      </div>
+    </section>
+
+    <section class="workflow-section" id="workflow">
+      <div class="wrap workflow-grid"><div><p class="eyebrow section-label">03 — A simple workflow</p><h2>Give it a task.<br><em>Stay in control.</em></h2><p class="workflow-copy">Codex works alongside you. Start with a goal, follow its progress, and review the work before it becomes part of your project.</p><a class="button button-dark" href="https://developers.openai.com/learn/codex" target="_blank" rel="noreferrer">Explore Codex <span>↗</span></a></div>
+        <div class="steps"><article class="step"><span class="step-no">01</span><div><h3>Describe the goal</h3><p>Share what you want to change and any useful context.</p></div><span class="step-symbol">✳</span></article><article class="step"><span class="step-no">02</span><div><h3>Let Codex work</h3><p>Codex helps write, review, or debug code for the task.</p></div><span class="step-symbol">⌘</span></article><article class="step"><span class="step-no">03</span><div><h3>Review the result</h3><p>Inspect the proposed changes and decide what to keep.</p></div><span class="step-symbol">✓</span></article></div>
+      </div>
+    </section>
+
+    <section class="closing wrap"><span class="closing-star">✳</span><p class="eyebrow">Make room for the interesting problems.</p><h2>Keep building.</h2><a class="button button-primary" href="https://developers.openai.com/learn/codex" target="_blank" rel="noreferrer">Discover Codex <span>↗</span></a></section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="#top"><span class="brand-mark">✳</span> codex<span class="brand-period">.</span></a><span>An introduction to OpenAI Codex</span><a href="https://openai.com" target="_blank" rel="noreferrer">OpenAI ↗</a></footer>
+</body>
+</html>
